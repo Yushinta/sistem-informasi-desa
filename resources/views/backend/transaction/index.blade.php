@@ -65,6 +65,8 @@ $(document).ready(function () {
                     // '<span data-toggle="modal" data-target="#export">'+
                     // '<a href="#export" class="btn btn-sm btn-success float-right" data-toggle="tooltip" title="Export ke Excel"><i class="fas fa-file-excel"></i></a>'+
                     // '</span>'+
+                
+                    '<a href="{{ route("transaction.create") }}" class="btn btn-sm btn-primary btn-shadow float-right" data-toggle="tooltip" title="Tambah Data"><i class="fas fa-plus"></i></a>'+
                 '</div>' +
                 '</div>');
 

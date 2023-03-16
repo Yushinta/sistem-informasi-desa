@@ -14,7 +14,7 @@
                         <th>NIK</th>
                         <th>Nama</th>
                         <th>Alamat</th>
-                        <th>Dukuh</th>
+                        <th>Dusun</th>
                         <th>Action</th>
                     </tr>
                 </thead>

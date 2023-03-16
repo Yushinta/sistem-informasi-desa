@@ -38,7 +38,7 @@
         .table td, .table th {
             padding: .3rem;
             vertical-align: top;
-            border: 1px solid ##333333;
+            border: 1px solid #333333;
         }
         .table-borderless tbody + tbody, .table-borderless td, .table-borderless th, .table-borderless thead th {
             border: 0;

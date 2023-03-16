@@ -1,5 +1,5 @@
 @extends('backend.layouts')
-@section('title','Data Dukuh')
+@section('title','Data Dusun')
 @section('content')
 <div class="col-lg-12">
     <div class="card shadow-sm mb-4">

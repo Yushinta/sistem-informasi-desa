@@ -3,7 +3,7 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-left justify-content-left" href="#">
-        <div class="sidebar-brand-text">SIMDES</div>
+        <div class="sidebar-brand-text">SISDES</div>
     </a>
 
     <!-- Divider -->
@@ -28,7 +28,7 @@
         <div id="master_data" class="collapse {{is_active(['religion.*','hamlet.*','civil.*'])  ? 'show':''}}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item {{active('religion.*')}}" href="{{route('religion.index')}}">Agama</a>
-            <a class="collapse-item {{active('hamlet.*')}}" href="{{route('hamlet.index')}}">Dukuh / Dusun</a>
+            <a class="collapse-item {{active('hamlet.*')}}" href="{{route('hamlet.index')}}">Dusun</a>
             <a class="collapse-item {{active('civil.*')}}" href="{{route('civil.index')}}">Penduduk</a>
             </div>
         </div>
@@ -42,7 +42,7 @@
     <li class="nav-item {{active('hamlet.index')}}">
         <a class="nav-link" href="{{route('hamlet.index')}}">
             <i class="fas fa-fw fa-boxes"></i>
-            <span>Dukuh</span>
+            <span>Dusun</span>
         </a>
     </li> --}}
     {{-- <li class="nav-item {{active('civil.index')}}">
@@ -59,6 +59,7 @@
         <div id="transaksi" class="collapse {{is_active(['mortality.*'])  ? 'show':''}}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item {{active('mortality.*')}}" href="{{route('mortality.index')}}">Kematian</a>
+            <!-- <a class="collapse-item {{active('transaction.index')}}" href="{{route('transaction.create')}}">Tambah Transaksi</a> -->
             <a class="collapse-item {{active('transaction.index')}}" href="{{route('transaction.index')}}">List Transaksi</a>
             <a class="collapse-item {{active('transaction.history')}}" href="{{route('transaction.history')}}">Riwayat Transaksi</a>
             </div>
@@ -70,10 +71,11 @@
             <span>Produk</span>
         </a>
     </li>
+    
     <li class="nav-item {{active('setting.index')}}">
         <a class="nav-link" href="{{route('setting.index')}}">
             <i class="fas fa-fw fa-cog"></i>
-            <span>Setting</span>
+            <span>Pengaturan</span>
         </a>
     </li>
     @if (auth()->user()->role->name == 'Super Admin')

@@ -82,7 +82,7 @@
                     </div>
                     <div class="col-lg-2">
                         <div class="form-group">
-                          <label>Dukuh</label>
+                          <label>Dusun</label>
                           <select name="hamlet_id" class="custom-select" required="">
                               @foreach (App\Hamlet::orderBy('name')->get() as $row)
                               <option value="{{$row->id}}">{{title_case($row->name)}}</option>

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Admin Page</title>
-  <link href="{{asset('backend/img/favicon.png')}}" rel="icon" type="image/png">
+  <link href="{{asset('backend/img/Lambang_Kabupaten_Temanggung.png')}}" rel="icon" type="image/png">
   <!-- Custom fonts for this template-->
   <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -38,9 +38,9 @@
               <div class="col-lg-12">
                   <div class="">
                     <div class="text-center">
-                        <img src="{{asset('backend/img/logo.png')}}" width="100px">
-                    <h1 class="h4 text-gray-900 mb-4">SIMDES V.1.0</h1>
-                    <br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
+                        <img src="{{asset('backend/img/Lambang_Kabupaten_Temanggung.png')}}" width="130px" height="150px">
+                        
+                    <br><br><h1 class="h5 text-gray-900 mb-4">SISDES PAGERGUNUNG</h1>
                     
                   </div>
                   <form class="user" action="{{route('proceed-login')}}" method="POST">
@@ -62,9 +62,7 @@
               </div>
             </div>
           </div>
-          <div class="card-footer bg-white text-center">
-              Made with <i class="fa fa-heart text-danger"></i> By <a href="http://digsa.id" target="_blank">Digsa.id</a>
-          </div>
+         
         </div>
 
       </div>
