@@ -5,9 +5,9 @@
     <div class="card shadow-sm mb-4">
             <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary float-left">@yield('title')</h6>
-                <a href="#create" data-toggle="modal" class="btn btn-sm btn-primary float-right">
+                <!-- <a href="#create" data-toggle="modal" class="btn btn-sm btn-primary float-right">
                     <i class="fa fa-plus"></i>
-                </a>
+                </a> -->
             </div>
             <div class="card-body">
                 <form action="{{route('setting.change')}}" method="post" enctype="multipart/form-data">

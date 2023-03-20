@@ -93,7 +93,7 @@ class CivilController extends Controller
             $request = $request->merge(['slug'=>$request->name]);
             $this->civil->find($id)->update($request->all());
             DB::commit();
-            return redirect()->route('civil.index')->with('success-message','Data telah d irubah');
+            return redirect()->route('civil.index')->with('success-message','Data telah diperbaharui');
         } catch (\Exception $e) {
             DB::rollback();
             return redirect()->back()->with('error-message',$e->getMessage());
