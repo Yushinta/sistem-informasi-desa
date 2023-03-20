@@ -110,8 +110,8 @@ class TransactionController extends Controller
             $amount = $this->transactionDetail->where('transaction_id',$transaction->id)->get()->sum('total');
             $this->transaction->find($transaction->id)->update(['amount'=>$amount]);
             DB::commit();
-            // return redirect()->route('transaction.index')->with('success-message','Data telah disimpan');
-            return redirect()->route('transaction.print',$transaction->id);
+            return redirect()->route('transaction.index')->with('success-message','Data telah disimpan');
+            // return redirect()->route('transaction.print',$transaction->id);
         } catch (\Exception $e) {
             DB::rollback();
             return redirect()->back()->with('error-message',$e->getMessage());
